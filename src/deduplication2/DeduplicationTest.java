@@ -21,7 +21,7 @@ public class DeduplicationTest {
     }
 
     @org.junit.Test
-    public void getWords1() {
+    public void getWordsTest1() {
         dd.addSentence("Ala ma kota");
         dd.addSentence("Grzegorz ma kota");
         dd.addSentence("Pawel ma lisa");
@@ -33,7 +33,7 @@ public class DeduplicationTest {
     }
 
     @org.junit.Test
-    public void getWords2() {
+    public void getWordsTest2() {
         dd.addSentence("Ala ma kota");
         dd.addSentence("Grzegorz ma kota");
         dd.addSentence("Pawel ma lisa");
@@ -53,7 +53,7 @@ public class DeduplicationTest {
         assertTrue(map.containsValue(" "));
     }
     @org.junit.Test
-    public void getWords3() {
+    public void getWordsTest3() {
         dd.addSentence("Ala ma kota");
         dd.addSentence("Pawel ma psa");
         dd.addSentence("Grzegorz, ma? lisa");
@@ -63,7 +63,7 @@ public class DeduplicationTest {
     }
 
     @org.junit.Test
-    public void getWords4() {
+    public void getWordsTest4() {
         dd.addSentence("Ole ole,ole ole");
 
         assertEquals(1, set.size());
@@ -71,7 +71,7 @@ public class DeduplicationTest {
     }
 
     @org.junit.Test
-    public void getWords5() {
+    public void getWordsTest5() {
         dd.addSentence("Ala ma? kota");
         dd.addSentence("Pawel ma psa");
         dd.addSentence("Grzegorz ma? lisa");
@@ -84,7 +84,7 @@ public class DeduplicationTest {
     }
 
     @org.junit.Test
-    public void getWords6() {
+    public void getWordsTest6() {
         dd.addSentence("Ala ma? kota");
         dd.addSentence("Pawel, ma kota");
         dd.addSentence("Grzegorz, ma kota");
